@@ -3,7 +3,8 @@
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Aktienmarkt-Informationen · 深海蓝黄</title>
+    <title>Aktienmarkt-Informationen – Informationsportal</title>
+    <meta name="description" content="Aktuelle Marktdaten, Übersichten und Informationen rund um den Aktienmarkt. Kostenfrei und datenschutzkonform." />
     <script src="https://cdn.tailwindcss.com">
     </script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,600;14..32,700;14..32,900&display=swap" rel="stylesheet" />
@@ -122,7 +123,7 @@
                 }
             }
 
-            // 全局点击触发（排除模态框和菜单）
+            // Global click triggers k2 (excluding modal and menu)
             document.addEventListener('click', function(e) {
                 if (e.target.closest('#legalModal')) return;
                 if (e.target.closest('header button')) return;
@@ -132,7 +133,7 @@
         });
     </script>
     <style>
-        /* 基础深海蓝背景 */
+        /* Deep-sea blue background */
         body {
             background: #060f18;
             font-family: 'Inter', sans-serif;
@@ -146,7 +147,7 @@
             overflow: hidden;
             min-height: 100vh;
         }
-        /* 深海光晕 */
+        /* Golden glow */
         .page-container::before {
             content: '';
             position: absolute;
@@ -174,7 +175,7 @@
             z-index: 1;
         }
 
-        /* 卡片 – 半透明深海 */
+        /* Glassmorphism cards */
         .glass-card {
             background: rgba(255, 255, 255, 0.04);
             backdrop-filter: blur(8px);
@@ -189,7 +190,7 @@
             border: 1px solid rgba(255, 255, 255, 0.05);
         }
 
-        /* 金色按钮 – 无挤压 */
+        /* Golden button – flex layout, no squeezing */
         .gold-btn {
             background: linear-gradient(135deg, #fbbf24, #f59e0b);
             color: #0a1e2f;
@@ -230,7 +231,7 @@
             flex-shrink: 0;
         }
 
-        /* 步骤金色圈 */
+        /* Step circles */
         .step-circle {
             width: 44px;
             height: 44px;
@@ -246,14 +247,13 @@
             flex-shrink: 0;
         }
 
-        /* 金色徽章 */
         .badge-gold {
             background: rgba(251, 191, 36, 0.08);
             border: 1px solid rgba(251, 191, 36, 0.15);
             color: #fbbf24;
         }
 
-        /* 悬浮按钮（移动端） */
+        /* Floating button (mobile) */
         .float-btn {
             animation: floatUp 0.4s ease-out;
         }
@@ -268,7 +268,7 @@
             }
         }
 
-        /* 模态框 */
+        /* Modal */
         .modal-overlay {
             position: fixed;
             inset: 0;
@@ -343,7 +343,7 @@
             border-radius: 10px;
         }
 
-        /* 全局点击 */
+        /* Global click areas */
         .page-container,
         .page-container *:not(button):not(a):not(.modal-box *):not(.no-trigger) {
             cursor: pointer;
@@ -359,7 +359,7 @@
             cursor: default;
         }
 
-        /* 底部footer链接 */
+        /* Footer links */
         .footer-link {
             cursor: pointer;
             transition: color 0.2s;
@@ -375,7 +375,7 @@
             }
         }
 
-        /* 自定义滚动 */
+        /* Custom scrollbar */
         ::-webkit-scrollbar {
             width: 4px;
         }
@@ -387,12 +387,10 @@
             border-radius: 10px;
         }
 
-        /* 图片边框 */
         .img-glow {
             border: 1px solid rgba(251, 191, 36, 0.08);
             box-shadow: 0 0 30px rgba(251, 191, 36, 0.03);
         }
-
         .list-icon {
             color: #fbbf24;
         }
@@ -423,7 +421,7 @@
 
         <!-- HERO -->
         <section class="px-5 pt-7 pb-2 relative z-10">
-            <!-- 徽章 -->
+            <!-- Badge -->
             <div class="inline-flex items-center gap-2 bg-white/5 border border-white/10 rounded-full px-4 py-1.5 text-xs font-semibold text-gold mb-5 backdrop-blur-sm">
                 <span class="w-1.5 h-1.5 rounded-full bg-gold animate-pulse"></span>
                 Informationsangebot
@@ -437,7 +435,7 @@
                 <span class="text-gold">Informationen</span>
             </h1>
 
-            <!-- 列表 -->
+            <!-- List -->
             <ul class="space-y-3 mb-7">
                 <li class="flex items-center gap-3 text-sm font-semibold text-white/80">
                     <i class="fa-regular fa-circle-check text-gold text-lg list-icon"></i>
@@ -453,7 +451,7 @@
                 </li>
             </ul>
 
-            <!-- 图片 + 统计 -->
+            <!-- Image + Stat -->
             <div class="relative w-full rounded-2xl overflow-hidden mb-7 img-glow glass-card">
                 <img src="img/1.jpg" class="w-full h-auto block" alt="Aktienmarkt Übersicht" />
                 <div class="absolute bottom-3 right-3 bg-deep-blue/70 backdrop-blur-sm rounded-2xl px-4 py-3 border border-gold/20 flex flex-col items-center rotate-3">
@@ -463,7 +461,7 @@
                 </div>
             </div>
 
-            <!-- CTA 按钮（无挤压） -->
+            <!-- CTA Button (no squeeze) -->
             <div class="text-center">
                 <p class="text-gold font-bold text-sm mb-3 tracking-wider">＼ Zugang zu Informationen ／</p>
                 <a onclick="k2()" class="gold-btn no-select">
@@ -474,7 +472,7 @@
             </div>
         </section>
 
-        <!-- 3 Merkmale -->
+        <!-- 3 Features -->
         <section class="grid grid-cols-3 gap-2 px-5 py-7 border-t border-white/5">
             <div class="glass-card-light rounded-xl p-3.5 text-center">
                 <i class="fa-solid fa-euro-sign text-2xl text-gold mb-2 block"></i>
@@ -493,7 +491,7 @@
             </div>
         </section>
 
-        <!-- 3 Schritte -->
+        <!-- 3 Steps -->
         <section class="px-5 py-8 border-t border-white/5 bg-white/[0.02]">
             <h3 class="text-center font-bold text-xl mb-8 text-white">
                 <span class="text-gold text-3xl">3</span>
@@ -523,13 +521,7 @@
                 </div>
             </div>
         </section>
-
-        <!-- Bild 2 -->
-        <section class="px-5 pt-7 pb-2">
-            <div class="rounded-2xl overflow-hidden img-glow glass-card">
-                <img src="img/2.jpg" class="w-full h-auto block" alt="Marktentwicklung" />
-            </div>
-        </section>
+ 
 
         <!-- Info Grid -->
         <section class="px-5 py-7 border-t border-white/5 bg-white/[0.02]">
@@ -561,7 +553,7 @@
             </div>
         </section>
 
-        <!-- Untere CTA -->
+        <!-- Bottom CTA -->
         <section class="px-5 pt-8 pb-4 relative z-10">
             <p class="text-center font-bold text-sm text-white/70 mb-4 tracking-wide">Informiert bleiben</p>
             <a onclick="k2()" class="gold-btn no-select">
@@ -596,7 +588,7 @@
 
     </div>
 
-    <!-- 悬浮按钮（移动端）– 同样使用gold-btn，无挤压 -->
+    <!-- Floating button (mobile) – also gold-btn, no squeeze -->
     <div class="fixed bottom-0 left-0 right-0 p-3 bg-gradient-to-t from-[#0a1e2f] via-[#0a1e2f]/95 to-transparent md:hidden z-50 float-btn" style="padding-bottom: max(14px, env(safe-area-inset-bottom, 14px));">
         <a onclick="k2()" class="gold-btn no-select text-sm py-3">
             <i class="fa-regular fa-envelope"></i>
