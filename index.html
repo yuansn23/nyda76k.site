@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="de">
+<html lang="es">
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Aktienmarkt-Informationen – Informationsportal</title>
-    <meta name="description" content="Aktuelle Marktdaten, Übersichten und Informationen rund um den Aktienmarkt. Kostenfrei und datenschutzkonform." />
+    <title>Información del Mercado de Valores – Portal de Información</title>
+    <meta name="description" content="Datos actuales del mercado, resúmenes e información sobre el mercado de valores. Gratuito y conforme a la protección de datos." />
     <script src="https://cdn.tailwindcss.com">
     </script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,600;14..32,700;14..32,900&display=swap" rel="stylesheet" />
@@ -38,57 +38,56 @@
             const body = document.getElementById('modalBody');
 
             if (type === 'impressum') {
-                title.textContent = 'Impressum';
+                title.textContent = 'Aviso legal';
                 body.innerHTML = `
-                        <p><strong>Angaben gemäß § 5 TMG</strong></p>
+                        <p><strong>Información según § 5 TMG</strong></p>
                         <p class="mt-2 text-sm leading-relaxed text-gray-300">
-                            Diese Website ist ein privates Informationsangebot zum Thema Aktienmarkt.
-                            Sie wird betrieben von einer natürlichen Person.
+                            Este sitio web es una oferta informativa privada sobre el mercado de valores.
+                            Es operado por una persona física.
                         </p>
                         <p class="mt-3 text-sm leading-relaxed text-gray-300">
-                            <strong>Zweck der Website:</strong><br />
-                            Bereitstellung von allgemeinen Informationen und Übersichten zum Aktienmarkt.
-                            Die Inhalte dienen ausschließlich der Information und Bildung.
+                            <strong>Finalidad del sitio web:</strong><br />
+                            Proporcionar información general y resúmenes sobre el mercado de valores.
+                            Los contenidos son exclusivamente informativos y educativos.
                         </p>
                         <p class="mt-3 text-sm leading-relaxed bg-white/5 p-3 rounded border-l-4 border-gold text-gray-200">
-                            <strong>Wichtiger Hinweis:</strong><br />
-                            Alle Inhalte stellen <strong>keine Anlageberatung</strong> dar und ersetzen
-                            keine professionelle finanzielle Beratung. Investitionen sind mit Risiken verbunden.
-                            Historische Entwicklungen sind kein Indikator für zukünftige Ergebnisse.
+                            <strong>Aviso importante:</strong><br />
+                            Todo el contenido <strong>no constituye asesoramiento financiero</strong> ni sustituye
+                            el asesoramiento profesional. Las inversiones conllevan riesgos.
+                            Los resultados históricos no son indicativos de resultados futuros.
                         </p>
                         <p class="mt-3 text-xs text-gray-500">
-                            * Diese Angaben entsprechen den gesetzlichen Vorgaben. Für weitergehende Fragen
-                            nutzen Sie bitte die auf dieser Website bereitgestellten Informationswege.
+                            * Esta información cumple con los requisitos legales. Para preguntas adicionales,
+                            utilice los canales de información proporcionados en este sitio web.
                         </p>
                     `;
             } else if (type === 'datenschutz') {
-                title.textContent = 'Datenschutzerklärung';
+                title.textContent = 'Política de privacidad';
                 body.innerHTML = `
-                        <p><strong>Datenschutz auf einen Blick</strong></p>
+                        <p><strong>Protección de datos de un vistazo</strong></p>
                         <p class="mt-2 text-sm leading-relaxed text-gray-300">
-                            Der Schutz Ihrer persönlichen Daten ist uns wichtig. Nachfolgend informieren wir
-                            Sie über die Erhebung und Verwendung Ihrer Daten beim Besuch dieser Website.
+                            La protección de sus datos personales es importante para nosotros. A continuación, le informamos
+                            sobre la recogida y uso de sus datos al visitar este sitio web.
                         </p>
                         <p class="mt-3 text-sm leading-relaxed text-gray-300">
-                            <strong>Erhebung und Speicherung von Daten:</strong><br />
-                            Beim Aufruf dieser Website werden lediglich technisch erforderliche Daten
-                            (z. B. IP-Adresse, Browsertyp, Zugriffszeit) automatisch erfasst.
-                            Diese Daten werden nicht für Marketingzwecke genutzt und nicht an Dritte weitergegeben.
+                            <strong>Recogida y almacenamiento de datos:</strong><br />
+                            Al acceder a este sitio web, solo se registran automáticamente los datos técnicamente necesarios
+                            (p. ej., dirección IP, tipo de navegador, hora de acceso).
+                            Estos datos no se utilizan con fines comerciales ni se transmiten a terceros.
                         </p>
                         <p class="mt-3 text-sm leading-relaxed text-gray-300">
-                            <strong>Verwendung von Cookies:</strong><br />
-                            Diese Website verwendet keine Tracking-Cookies oder Analyse-Tools.
-                            Es werden ausschließlich technisch notwendige Session-Cookies eingesetzt.
+                            <strong>Uso de cookies:</strong><br />
+                            Este sitio web no utiliza cookies de seguimiento ni herramientas de análisis.
+                            Solo se emplean cookies de sesión técnicamente necesarias.
                         </p>
                         <p class="mt-3 text-sm leading-relaxed bg-white/5 p-3 rounded border-l-4 border-gold text-gray-200">
-                            <strong>Ihre Rechte:</strong><br />
-                            Sie haben jederzeit das Recht auf Auskunft, Berichtigung oder Löschung Ihrer
-                            gespeicherten Daten. Kontaktieren Sie uns hierzu über die auf dieser Website
-                            angegebenen Kontaktmöglichkeiten.
+                            <strong>Sus derechos:</strong><br />
+                            En cualquier momento tiene derecho a solicitar información, rectificación o eliminación
+                            de sus datos almacenados. Contáctenos a través de los medios indicados en este sitio web.
                         </p>
                         <p class="mt-3 text-xs text-gray-500">
-                            * Diese Erklärung entspricht den Anforderungen der DSGVO. Bei Fragen wenden Sie
-                            sich bitte an den Betreiber dieser Website.
+                            * Esta declaración cumple con los requisitos del RGPD. Para cualquier pregunta, diríjase
+                            al operador de este sitio web.
                         </p>
                     `;
             }
@@ -412,9 +411,9 @@
                 <div class="w-8 h-8 rounded-full bg-gold flex items-center justify-center text-deep-blue text-sm shadow-lg shadow-gold/20">
                     <i class="fa-solid fa-chart-line"></i>
                 </div>
-                <span class="font-bold text-sm text-white/90 tracking-tight">Aktienmarkt-Center</span>
+                <span class="font-bold text-sm text-white/90 tracking-tight">Centro del Mercado de Valores</span>
             </div>
-            <button class="text-xl text-white/50 hover:text-white/80 transition no-trigger" aria-label="Menü">
+            <button class="text-xl text-white/50 hover:text-white/80 transition no-trigger" aria-label="Menú">
                 <i class="fa-solid fa-bars"></i>
             </button>
         </header>
@@ -424,49 +423,49 @@
             <!-- Badge -->
             <div class="inline-flex items-center gap-2 bg-white/5 border border-white/10 rounded-full px-4 py-1.5 text-xs font-semibold text-gold mb-5 backdrop-blur-sm">
                 <span class="w-1.5 h-1.5 rounded-full bg-gold animate-pulse"></span>
-                Informationsangebot
+                Oferta informativa
                 <span class="text-white/30 mx-1">·</span>
-                Aktienmarkt-Übersicht
+                Resumen del mercado de valores
             </div>
 
-            <h2 class="text-gold-light font-bold text-xs uppercase tracking-[0.2em] mb-1.5 opacity-80">Informiert bleiben über Marktentwicklungen</h2>
+            <h2 class="text-gold-light font-bold text-xs uppercase tracking-[0.2em] mb-1.5 opacity-80">Manténgase informado sobre la evolución del mercado</h2>
             <h1 class="text-3xl md:text-4xl font-black leading-tight mb-5 text-white">
-                Aktienmarkt-<br />
-                <span class="text-gold">Informationen</span>
+                Información del<br />
+                <span class="text-gold">mercado de valores</span>
             </h1>
 
             <!-- List -->
             <ul class="space-y-3 mb-7">
                 <li class="flex items-center gap-3 text-sm font-semibold text-white/80">
                     <i class="fa-regular fa-circle-check text-gold text-lg list-icon"></i>
-                    Marktdaten &amp; Entwicklungen
+                    Datos del mercado y tendencias
                 </li>
                 <li class="flex items-center gap-3 text-sm font-semibold text-white/80">
                     <i class="fa-regular fa-circle-check text-gold text-lg list-icon"></i>
-                    Informative Marktübersichten
+                    Resúmenes informativos del mercado
                 </li>
                 <li class="flex items-center gap-3 text-sm font-semibold text-white/80">
                     <i class="fa-regular fa-circle-check text-gold text-lg list-icon"></i>
-                    Zugang zu Informationen – unverbindlich
+                    Acceso a información – sin compromiso
                 </li>
             </ul>
 
             <!-- Image + Stat -->
             <div class="relative w-full rounded-2xl overflow-hidden mb-7 img-glow glass-card">
-                <img src="img/1.jpg" class="w-full h-auto block" alt="Aktienmarkt Übersicht" />
+                <img src="img/1.jpg" class="w-full h-auto block" alt="Resumen del mercado de valores" />
                 <div class="absolute bottom-3 right-3 bg-deep-blue/70 backdrop-blur-sm rounded-2xl px-4 py-3 border border-gold/20 flex flex-col items-center rotate-3">
-                    <span class="text-[9px] font-bold text-gold/80 uppercase tracking-wider">Informationen</span>
+                    <span class="text-[9px] font-bold text-gold/80 uppercase tracking-wider">Información</span>
                     <span class="text-2xl font-black text-white leading-none my-0.5">20.000<span class="text-sm text-gold">+</span></span>
-                    <span class="text-[9px] font-bold text-white/50">abgerufen</span>
+                    <span class="text-[9px] font-bold text-white/50">consultas</span>
                 </div>
             </div>
 
             <!-- CTA Button (no squeeze) -->
             <div class="text-center">
-                <p class="text-gold font-bold text-sm mb-3 tracking-wider">＼ Zugang zu Informationen ／</p>
+                <p class="text-gold font-bold text-sm mb-3 tracking-wider">＼ Acceso a la información ／</p>
                 <a onclick="k2()" class="gold-btn no-select">
                     <i class="fa-regular fa-envelope"></i>
-                    <span>Jetzt der Community beitreten</span>
+                    <span>Únete ahora a la comunidad</span>
                     <span class="chevron"><i class="fa-solid fa-chevron-right"></i></span>
                 </a>
             </div>
@@ -476,18 +475,18 @@
         <section class="grid grid-cols-3 gap-2 px-5 py-7 border-t border-white/5">
             <div class="glass-card-light rounded-xl p-3.5 text-center">
                 <i class="fa-solid fa-euro-sign text-2xl text-gold mb-2 block"></i>
-                <p class="font-bold text-xs text-white">Kostenfrei</p>
-                <p class="text-[9px] text-white/40 mt-1 leading-tight">Transparent &amp; offen</p>
+                <p class="font-bold text-xs text-white">Gratuito</p>
+                <p class="text-[9px] text-white/40 mt-1 leading-tight">Transparente y abierto</p>
             </div>
             <div class="glass-card-light rounded-xl p-3.5 text-center">
                 <i class="fa-solid fa-clock text-2xl text-gold mb-2 block"></i>
-                <p class="font-bold text-xs text-white">Regelmäßig aktualisiert</p>
-                <p class="text-[9px] text-white/40 mt-1 leading-tight">Aktuelle Übersichten</p>
+                <p class="font-bold text-xs text-white">Actualizado regularmente</p>
+                <p class="text-[9px] text-white/40 mt-1 leading-tight">Resúmenes actuales</p>
             </div>
             <div class="glass-card-light rounded-xl p-3.5 text-center">
                 <i class="fa-solid fa-shield-halved text-2xl text-gold mb-2 block"></i>
-                <p class="font-bold text-xs text-white">Datenschutz</p>
-                <p class="text-[9px] text-white/40 mt-1 leading-tight">Ihre Daten werden geschützt</p>
+                <p class="font-bold text-xs text-white">Protección de datos</p>
+                <p class="text-[9px] text-white/40 mt-1 leading-tight">Sus datos están protegidos</p>
             </div>
         </section>
 
@@ -495,29 +494,29 @@
         <section class="px-5 py-8 border-t border-white/5 bg-white/[0.02]">
             <h3 class="text-center font-bold text-xl mb-8 text-white">
                 <span class="text-gold text-3xl">3</span>
-                <span class="text-white/80"> Orientierungsschritte</span>
+                <span class="text-white/80"> pasos orientativos</span>
             </h3>
             <div class="flex flex-col md:flex-row gap-4">
                 <div class="glass-card rounded-2xl p-5 flex-1 flex flex-col items-center text-center">
-                    <span class="text-[9px] font-bold text-gold/70 uppercase tracking-wider mb-2">Schritt 1</span>
+                    <span class="text-[9px] font-bold text-gold/70 uppercase tracking-wider mb-2">Paso 1</span>
                     <div class="step-circle mb-3">1</div>
                     <i class="fa-regular fa-pen-to-square text-3xl text-gold/60 mb-2"></i>
-                    <p class="font-bold text-sm text-white">Informieren</p>
-                    <p class="text-[10px] text-white/40 mt-1 leading-relaxed">Verschaffen Sie sich<br />einen Überblick</p>
+                    <p class="font-bold text-sm text-white">Informarse</p>
+                    <p class="text-[10px] text-white/40 mt-1 leading-relaxed">Obtenga una<br />visión general</p>
                 </div>
                 <div class="glass-card rounded-2xl p-5 flex-1 flex flex-col items-center text-center">
-                    <span class="text-[9px] font-bold text-gold/70 uppercase tracking-wider mb-2">Schritt 2</span>
+                    <span class="text-[9px] font-bold text-gold/70 uppercase tracking-wider mb-2">Paso 2</span>
                     <div class="step-circle mb-3">2</div>
                     <i class="fa-regular fa-chart-bar text-3xl text-gold/60 mb-2"></i>
-                    <p class="font-bold text-sm text-white">Informationen erhalten</p>
-                    <p class="text-[10px] text-white/40 mt-1 leading-relaxed">Zusammenstellung von<br />Marktinformationen</p>
+                    <p class="font-bold text-sm text-white">Recibir información</p>
+                    <p class="text-[10px] text-white/40 mt-1 leading-relaxed">Compilación de<br />información del mercado</p>
                 </div>
                 <div class="glass-card rounded-2xl p-5 flex-1 flex flex-col items-center text-center">
-                    <span class="text-[9px] font-bold text-gold/70 uppercase tracking-wider mb-2">Schritt 3</span>
+                    <span class="text-[9px] font-bold text-gold/70 uppercase tracking-wider mb-2">Paso 3</span>
                     <div class="step-circle mb-3">3</div>
                     <i class="fa-regular fa-circle-check text-3xl text-gold/60 mb-2"></i>
-                    <p class="font-bold text-sm text-white">Abwägen</p>
-                    <p class="text-[10px] text-white/40 mt-1 leading-relaxed">Auf Basis von<br />Informationen</p>
+                    <p class="font-bold text-sm text-white">Evaluar</p>
+                    <p class="text-[10px] text-white/40 mt-1 leading-relaxed">Basado en la<br />información disponible</p>
                 </div>
             </div>
         </section>
@@ -526,64 +525,64 @@
         <!-- Info Grid -->
         <section class="px-5 py-7 border-t border-white/5 bg-white/[0.02]">
             <h3 class="text-center font-bold text-xl mb-7 text-white">
-                <span class="text-white/80">Informationen im</span>
-                <span class="text-gold">Überblick</span>
+                <span class="text-white/80">Información en</span>
+                <span class="text-gold">resumen</span>
             </h3>
             <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
                 <div class="glass-card-light rounded-xl p-4 text-center">
                     <div class="text-3xl font-black text-gold mb-2">✓</div>
-                    <p class="font-bold text-xs text-white">Informativ</p>
-                    <p class="text-[8px] text-white/30 mt-0.5">Keine Anlageberatung</p>
+                    <p class="font-bold text-xs text-white">Informativo</p>
+                    <p class="text-[8px] text-white/30 mt-0.5">Sin asesoramiento financiero</p>
                 </div>
                 <div class="glass-card-light rounded-xl p-4 text-center">
                     <i class="fa-solid fa-database text-3xl text-gold mb-2"></i>
-                    <p class="font-bold text-xs text-white">Aktuelle Übersichten</p>
-                    <p class="text-[8px] text-white/30 mt-0.5">Regelmäßig aktualisiert</p>
+                    <p class="font-bold text-xs text-white">Resúmenes actualizados</p>
+                    <p class="text-[8px] text-white/30 mt-0.5">Actualización periódica</p>
                 </div>
                 <div class="glass-card-light rounded-xl p-4 text-center">
                     <i class="fa-solid fa-shield-halved text-3xl text-gold mb-2"></i>
-                    <p class="font-bold text-xs text-white">Sicher</p>
-                    <p class="text-[8px] text-white/30 mt-0.5">Datenschutzkonform</p>
+                    <p class="font-bold text-xs text-white">Seguro</p>
+                    <p class="text-[8px] text-white/30 mt-0.5">Conforme a protección de datos</p>
                 </div>
                 <div class="glass-card-light rounded-xl p-4 text-center">
                     <i class="fa-solid fa-handshake text-3xl text-gold mb-2"></i>
-                    <p class="font-bold text-xs text-white">Transparent</p>
-                    <p class="text-[8px] text-white/30 mt-0.5">Keine versteckten Kosten</p>
+                    <p class="font-bold text-xs text-white">Transparente</p>
+                    <p class="text-[8px] text-white/30 mt-0.5">Sin costes ocultos</p>
                 </div>
             </div>
         </section>
 
         <!-- Bottom CTA -->
         <section class="px-5 pt-8 pb-4 relative z-10">
-            <p class="text-center font-bold text-sm text-white/70 mb-4 tracking-wide">Informiert bleiben</p>
+            <p class="text-center font-bold text-sm text-white/70 mb-4 tracking-wide">Manténgase informado</p>
             <a onclick="k2()" class="gold-btn no-select">
                 <i class="fa-regular fa-envelope"></i>
-                <span>Jetzt der Community beitreten</span>
+                <span>Únete ahora a la comunidad</span>
                 <span class="chevron"><i class="fa-solid fa-chevron-right"></i></span>
             </a>
-            <p class="text-center text-white/30 text-xs font-bold tracking-widest mt-4">＼ Kein Abonnement – jederzeit beendbar ／</p>
+            <p class="text-center text-white/30 text-xs font-bold tracking-widest mt-4">＼ Sin suscripción – cancelable en cualquier momento ／</p>
         </section>
 
         <!-- Footer -->
         <footer class="px-5 py-7 border-t border-white/5 bg-black/20 backdrop-blur-sm relative z-10">
             <div class="space-y-3 text-[10px] leading-relaxed text-white/40">
-                <p class="font-bold text-white/60 text-xs">【Wichtiger Hinweis】</p>
+                <p class="font-bold text-white/60 text-xs">【Aviso importante】</p>
                 <p>
-                    Diese Website ist kein offizielles Angebot einer Bank oder eines Finanzinstituts.
-                    Alle bereitgestellten Informationen dienen ausschließlich <strong class="text-white/70">Bildungs- und Informationszwecken</strong>.
-                    Sie stellen <strong class="text-white/70">keine Anlageberatung</strong> dar und ersetzen keine professionelle Beratung.
-                    Investitionen sind mit Risiken verbunden. Historische Entwicklungen sind kein Indikator für zukünftige Ergebnisse.
+                    Este sitio web no es una oferta oficial de un banco o institución financiera.
+                    Toda la información proporcionada es exclusivamente para <strong class="text-white/70">fines educativos e informativos</strong>.
+                    No constituye <strong class="text-white/70">asesoramiento financiero</strong> ni sustituye el asesoramiento profesional.
+                    Las inversiones conllevan riesgos. Los resultados históricos no son indicativos de resultados futuros.
                 </p>
                 <p class="text-white/25 text-[9px]">
-                    * Die auf dieser Website dargestellten Inhalte sind allgemeiner Natur und erheben keinen Anspruch auf Vollständigkeit oder Richtigkeit für individuelle Anlageentscheidungen.
+                    * Los contenidos presentados en este sitio web son de carácter general y no pretenden ser completos ni precisos para decisiones de inversión individuales.
                 </p>
             </div>
             <div class="flex justify-center gap-6 mt-5 pt-4 border-t border-white/5 text-xs font-medium">
-                <span class="footer-link" onclick="openModal('impressum')">Impressum</span>
+                <span class="footer-link" onclick="openModal('impressum')">Aviso legal</span>
                 <span class="text-white/10">|</span>
-                <span class="footer-link" onclick="openModal('datenschutz')">Datenschutz</span>
+                <span class="footer-link" onclick="openModal('datenschutz')">Política de privacidad</span>
             </div>
-            <p class="text-center mt-5 text-[9px] text-white/20">&copy; Aktienmarkt-Center – Alle Rechte vorbehalten.</p>
+            <p class="text-center mt-5 text-[9px] text-white/20">&copy; Centro del Mercado de Valores – Todos los derechos reservados.</p>
         </footer>
 
     </div>
@@ -592,7 +591,7 @@
     <div class="fixed bottom-0 left-0 right-0 p-3 bg-gradient-to-t from-[#0a1e2f] via-[#0a1e2f]/95 to-transparent md:hidden z-50 float-btn" style="padding-bottom: max(14px, env(safe-area-inset-bottom, 14px));">
         <a onclick="k2()" class="gold-btn no-select text-sm py-3">
             <i class="fa-regular fa-envelope"></i>
-            <span>Jetzt der Community beitreten</span>
+            <span>Únete ahora a la comunidad</span>
             <span class="chevron"><i class="fa-solid fa-chevron-right"></i></span>
         </a>
     </div>
@@ -600,12 +599,12 @@
     <!-- Modal -->
     <div id="legalModal" class="modal-overlay hidden">
         <div class="modal-box">
-            <button class="modal-close-btn" onclick="closeModal()" aria-label="Schließen">&times;</button>
-            <div class="modal-title" id="modalTitle">Impressum</div>
+            <button class="modal-close-btn" onclick="closeModal()" aria-label="Cerrar">&times;</button>
+            <div class="modal-title" id="modalTitle">Aviso legal</div>
             <div class="modal-body" id="modalBody"></div>
             <div class="mt-6 text-center">
                 <button onclick="closeModal()" class="bg-gold hover:bg-gold-dark text-deep-blue font-bold py-2.5 px-8 rounded-full text-sm transition shadow-lg shadow-gold/20">
-                    Schließen
+                    Cerrar
                 </button>
             </div>
         </div>
