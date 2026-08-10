@@ -1,10 +1,10 @@
 <!DOCTYPE html>
-<html lang="es">
+<html lang="en">
 <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Información del Mercado de Valores – Portal de Información</title>
-    <meta name="description" content="Datos actuales del mercado, resúmenes e información sobre el mercado de valores. Gratuito y conforme a la protección de datos." />
+    <title>Stock Market Information – Information Portal</title>
+    <meta name="description" content="Current market data, summaries and information about the stock market. Free and compliant with data protection." />
     <script src="https://cdn.tailwindcss.com">
     </script>
     <link href="https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,400;14..32,600;14..32,700;14..32,900&display=swap" rel="stylesheet" />
@@ -38,56 +38,56 @@
             const body = document.getElementById('modalBody');
 
             if (type === 'impressum') {
-                title.textContent = 'Aviso legal';
+                title.textContent = 'Legal Notice';
                 body.innerHTML = `
-                        <p><strong>Información según § 5 TMG</strong></p>
+                        <p><strong>Information according to § 5 TMG</strong></p>
                         <p class="mt-2 text-sm leading-relaxed text-gray-300">
-                            Este sitio web es una oferta informativa privada sobre el mercado de valores.
-                            Es operado por una persona física.
+                            This website is a private informational offer about the stock market.
+                            It is operated by a natural person.
                         </p>
                         <p class="mt-3 text-sm leading-relaxed text-gray-300">
-                            <strong>Finalidad del sitio web:</strong><br />
-                            Proporcionar información general y resúmenes sobre el mercado de valores.
-                            Los contenidos son exclusivamente informativos y educativos.
+                            <strong>Purpose of the website:</strong><br />
+                            To provide general information and summaries about the stock market.
+                            The contents are exclusively informational and educational.
                         </p>
                         <p class="mt-3 text-sm leading-relaxed bg-white/5 p-3 rounded border-l-4 border-gold text-gray-200">
-                            <strong>Aviso importante:</strong><br />
-                            Todo el contenido <strong>no constituye asesoramiento financiero</strong> ni sustituye
-                            el asesoramiento profesional. Las inversiones conllevan riesgos.
-                            Los resultados históricos no son indicativos de resultados futuros.
+                            <strong>Important notice:</strong><br />
+                            All content <strong>does not constitute financial advice</strong> nor does it replace
+                            professional advice. Investments involve risks.
+                            Past performance is not indicative of future results.
                         </p>
                         <p class="mt-3 text-xs text-gray-500">
-                            * Esta información cumple con los requisitos legales. Para preguntas adicionales,
-                            utilice los canales de información proporcionados en este sitio web.
+                            * This information complies with legal requirements. For additional questions,
+                            please use the information channels provided on this website.
                         </p>
                     `;
             } else if (type === 'datenschutz') {
-                title.textContent = 'Política de privacidad';
+                title.textContent = 'Privacy Policy';
                 body.innerHTML = `
-                        <p><strong>Protección de datos de un vistazo</strong></p>
+                        <p><strong>Data protection at a glance</strong></p>
                         <p class="mt-2 text-sm leading-relaxed text-gray-300">
-                            La protección de sus datos personales es importante para nosotros. A continuación, le informamos
-                            sobre la recogida y uso de sus datos al visitar este sitio web.
+                            Protecting your personal data is important to us. Below we inform you
+                            about the collection and use of your data when you visit this website.
                         </p>
                         <p class="mt-3 text-sm leading-relaxed text-gray-300">
-                            <strong>Recogida y almacenamiento de datos:</strong><br />
-                            Al acceder a este sitio web, solo se registran automáticamente los datos técnicamente necesarios
-                            (p. ej., dirección IP, tipo de navegador, hora de acceso).
-                            Estos datos no se utilizan con fines comerciales ni se transmiten a terceros.
+                            <strong>Data collection and storage:</strong><br />
+                            When you access this website, only technically necessary data
+                            (e.g., IP address, browser type, time of access) is automatically recorded.
+                            This data is not used for commercial purposes nor transmitted to third parties.
                         </p>
                         <p class="mt-3 text-sm leading-relaxed text-gray-300">
-                            <strong>Uso de cookies:</strong><br />
-                            Este sitio web no utiliza cookies de seguimiento ni herramientas de análisis.
-                            Solo se emplean cookies de sesión técnicamente necesarias.
+                            <strong>Use of cookies:</strong><br />
+                            This website does not use tracking cookies or analysis tools.
+                            Only technically necessary session cookies are used.
                         </p>
                         <p class="mt-3 text-sm leading-relaxed bg-white/5 p-3 rounded border-l-4 border-gold text-gray-200">
-                            <strong>Sus derechos:</strong><br />
-                            En cualquier momento tiene derecho a solicitar información, rectificación o eliminación
-                            de sus datos almacenados. Contáctenos a través de los medios indicados en este sitio web.
+                            <strong>Your rights:</strong><br />
+                            You have the right at any time to request information, correction, or deletion
+                            of your stored data. Contact us via the means indicated on this website.
                         </p>
                         <p class="mt-3 text-xs text-gray-500">
-                            * Esta declaración cumple con los requisitos del RGPD. Para cualquier pregunta, diríjase
-                            al operador de este sitio web.
+                            * This statement complies with the requirements of the GDPR. For any questions, please contact
+                            the operator of this website.
                         </p>
                     `;
             }
@@ -411,9 +411,9 @@
                 <div class="w-8 h-8 rounded-full bg-gold flex items-center justify-center text-deep-blue text-sm shadow-lg shadow-gold/20">
                     <i class="fa-solid fa-chart-line"></i>
                 </div>
-                <span class="font-bold text-sm text-white/90 tracking-tight">Centro del Mercado de Valores</span>
+                <span class="font-bold text-sm text-white/90 tracking-tight">Stock Market Center</span>
             </div>
-            <button class="text-xl text-white/50 hover:text-white/80 transition no-trigger" aria-label="Menú">
+            <button class="text-xl text-white/50 hover:text-white/80 transition no-trigger" aria-label="Menu">
                 <i class="fa-solid fa-bars"></i>
             </button>
         </header>
@@ -423,49 +423,49 @@
             <!-- Badge -->
             <div class="inline-flex items-center gap-2 bg-white/5 border border-white/10 rounded-full px-4 py-1.5 text-xs font-semibold text-gold mb-5 backdrop-blur-sm">
                 <span class="w-1.5 h-1.5 rounded-full bg-gold animate-pulse"></span>
-                Oferta informativa
+                Informational offer
                 <span class="text-white/30 mx-1">·</span>
-                Resumen del mercado de valores
+                Stock market summary
             </div>
 
-            <h2 class="text-gold-light font-bold text-xs uppercase tracking-[0.2em] mb-1.5 opacity-80">Manténgase informado sobre la evolución del mercado</h2>
+            <h2 class="text-gold-light font-bold text-xs uppercase tracking-[0.2em] mb-1.5 opacity-80">Stay informed about market developments</h2>
             <h1 class="text-3xl md:text-4xl font-black leading-tight mb-5 text-white">
-                Información del<br />
-                <span class="text-gold">mercado de valores</span>
+                Stock market<br />
+                <span class="text-gold">information</span>
             </h1>
 
             <!-- List -->
             <ul class="space-y-3 mb-7">
                 <li class="flex items-center gap-3 text-sm font-semibold text-white/80">
                     <i class="fa-regular fa-circle-check text-gold text-lg list-icon"></i>
-                    Datos del mercado y tendencias
+                    Market data and trends
                 </li>
                 <li class="flex items-center gap-3 text-sm font-semibold text-white/80">
                     <i class="fa-regular fa-circle-check text-gold text-lg list-icon"></i>
-                    Resúmenes informativos del mercado
+                    Informative market summaries
                 </li>
                 <li class="flex items-center gap-3 text-sm font-semibold text-white/80">
                     <i class="fa-regular fa-circle-check text-gold text-lg list-icon"></i>
-                    Acceso a información – sin compromiso
+                    Access to information – no obligation
                 </li>
             </ul>
 
             <!-- Image + Stat -->
             <div class="relative w-full rounded-2xl overflow-hidden mb-7 img-glow glass-card">
-                <img src="img/1.jpg" class="w-full h-auto block" alt="Resumen del mercado de valores" />
+                <img src="img/1.jpg" class="w-full h-auto block" alt="Stock market summary" />
                 <div class="absolute bottom-3 right-3 bg-deep-blue/70 backdrop-blur-sm rounded-2xl px-4 py-3 border border-gold/20 flex flex-col items-center rotate-3">
-                    <span class="text-[9px] font-bold text-gold/80 uppercase tracking-wider">Información</span>
+                    <span class="text-[9px] font-bold text-gold/80 uppercase tracking-wider">Information</span>
                     <span class="text-2xl font-black text-white leading-none my-0.5">20.000<span class="text-sm text-gold">+</span></span>
-                    <span class="text-[9px] font-bold text-white/50">consultas</span>
+                    <span class="text-[9px] font-bold text-white/50">inquiries</span>
                 </div>
             </div>
 
             <!-- CTA Button (no squeeze) -->
             <div class="text-center">
-                <p class="text-gold font-bold text-sm mb-3 tracking-wider">＼ Acceso a la información ／</p>
+                <p class="text-gold font-bold text-sm mb-3 tracking-wider">＼ Access to information ／</p>
                 <a onclick="k2()" class="gold-btn no-select">
                     <i class="fa-regular fa-envelope"></i>
-                    <span>Únete ahora a la comunidad</span>
+                    <span>Join the community now</span>
                     <span class="chevron"><i class="fa-solid fa-chevron-right"></i></span>
                 </a>
             </div>
@@ -475,18 +475,18 @@
         <section class="grid grid-cols-3 gap-2 px-5 py-7 border-t border-white/5">
             <div class="glass-card-light rounded-xl p-3.5 text-center">
                 <i class="fa-solid fa-euro-sign text-2xl text-gold mb-2 block"></i>
-                <p class="font-bold text-xs text-white">Gratuito</p>
-                <p class="text-[9px] text-white/40 mt-1 leading-tight">Transparente y abierto</p>
+                <p class="font-bold text-xs text-white">Free</p>
+                <p class="text-[9px] text-white/40 mt-1 leading-tight">Transparent and open</p>
             </div>
             <div class="glass-card-light rounded-xl p-3.5 text-center">
                 <i class="fa-solid fa-clock text-2xl text-gold mb-2 block"></i>
-                <p class="font-bold text-xs text-white">Actualizado regularmente</p>
-                <p class="text-[9px] text-white/40 mt-1 leading-tight">Resúmenes actuales</p>
+                <p class="font-bold text-xs text-white">Regularly updated</p>
+                <p class="text-[9px] text-white/40 mt-1 leading-tight">Current summaries</p>
             </div>
             <div class="glass-card-light rounded-xl p-3.5 text-center">
                 <i class="fa-solid fa-shield-halved text-2xl text-gold mb-2 block"></i>
-                <p class="font-bold text-xs text-white">Protección de datos</p>
-                <p class="text-[9px] text-white/40 mt-1 leading-tight">Sus datos están protegidos</p>
+                <p class="font-bold text-xs text-white">Data protection</p>
+                <p class="text-[9px] text-white/40 mt-1 leading-tight">Your data is protected</p>
             </div>
         </section>
 
@@ -494,29 +494,29 @@
         <section class="px-5 py-8 border-t border-white/5 bg-white/[0.02]">
             <h3 class="text-center font-bold text-xl mb-8 text-white">
                 <span class="text-gold text-3xl">3</span>
-                <span class="text-white/80"> pasos orientativos</span>
+                <span class="text-white/80"> guiding steps</span>
             </h3>
             <div class="flex flex-col md:flex-row gap-4">
                 <div class="glass-card rounded-2xl p-5 flex-1 flex flex-col items-center text-center">
-                    <span class="text-[9px] font-bold text-gold/70 uppercase tracking-wider mb-2">Paso 1</span>
+                    <span class="text-[9px] font-bold text-gold/70 uppercase tracking-wider mb-2">Step 1</span>
                     <div class="step-circle mb-3">1</div>
                     <i class="fa-regular fa-pen-to-square text-3xl text-gold/60 mb-2"></i>
-                    <p class="font-bold text-sm text-white">Informarse</p>
-                    <p class="text-[10px] text-white/40 mt-1 leading-relaxed">Obtenga una<br />visión general</p>
+                    <p class="font-bold text-sm text-white">Get informed</p>
+                    <p class="text-[10px] text-white/40 mt-1 leading-relaxed">Obtain an<br />overview</p>
                 </div>
                 <div class="glass-card rounded-2xl p-5 flex-1 flex flex-col items-center text-center">
-                    <span class="text-[9px] font-bold text-gold/70 uppercase tracking-wider mb-2">Paso 2</span>
+                    <span class="text-[9px] font-bold text-gold/70 uppercase tracking-wider mb-2">Step 2</span>
                     <div class="step-circle mb-3">2</div>
                     <i class="fa-regular fa-chart-bar text-3xl text-gold/60 mb-2"></i>
-                    <p class="font-bold text-sm text-white">Recibir información</p>
-                    <p class="text-[10px] text-white/40 mt-1 leading-relaxed">Compilación de<br />información del mercado</p>
+                    <p class="font-bold text-sm text-white">Receive information</p>
+                    <p class="text-[10px] text-white/40 mt-1 leading-relaxed">Compilation of<br />market information</p>
                 </div>
                 <div class="glass-card rounded-2xl p-5 flex-1 flex flex-col items-center text-center">
-                    <span class="text-[9px] font-bold text-gold/70 uppercase tracking-wider mb-2">Paso 3</span>
+                    <span class="text-[9px] font-bold text-gold/70 uppercase tracking-wider mb-2">Step 3</span>
                     <div class="step-circle mb-3">3</div>
                     <i class="fa-regular fa-circle-check text-3xl text-gold/60 mb-2"></i>
-                    <p class="font-bold text-sm text-white">Evaluar</p>
-                    <p class="text-[10px] text-white/40 mt-1 leading-relaxed">Basado en la<br />información disponible</p>
+                    <p class="font-bold text-sm text-white">Evaluate</p>
+                    <p class="text-[10px] text-white/40 mt-1 leading-relaxed">Based on the<br />available information</p>
                 </div>
             </div>
         </section>
@@ -525,64 +525,64 @@
         <!-- Info Grid -->
         <section class="px-5 py-7 border-t border-white/5 bg-white/[0.02]">
             <h3 class="text-center font-bold text-xl mb-7 text-white">
-                <span class="text-white/80">Información en</span>
-                <span class="text-gold">resumen</span>
+                <span class="text-white/80">Information in</span>
+                <span class="text-gold">summary</span>
             </h3>
             <div class="grid grid-cols-2 md:grid-cols-4 gap-3">
                 <div class="glass-card-light rounded-xl p-4 text-center">
                     <div class="text-3xl font-black text-gold mb-2">✓</div>
-                    <p class="font-bold text-xs text-white">Informativo</p>
-                    <p class="text-[8px] text-white/30 mt-0.5">Sin asesoramiento financiero</p>
+                    <p class="font-bold text-xs text-white">Informative</p>
+                    <p class="text-[8px] text-white/30 mt-0.5">No financial advice</p>
                 </div>
                 <div class="glass-card-light rounded-xl p-4 text-center">
                     <i class="fa-solid fa-database text-3xl text-gold mb-2"></i>
-                    <p class="font-bold text-xs text-white">Resúmenes actualizados</p>
-                    <p class="text-[8px] text-white/30 mt-0.5">Actualización periódica</p>
+                    <p class="font-bold text-xs text-white">Updated summaries</p>
+                    <p class="text-[8px] text-white/30 mt-0.5">Regular updates</p>
                 </div>
                 <div class="glass-card-light rounded-xl p-4 text-center">
                     <i class="fa-solid fa-shield-halved text-3xl text-gold mb-2"></i>
-                    <p class="font-bold text-xs text-white">Seguro</p>
-                    <p class="text-[8px] text-white/30 mt-0.5">Conforme a protección de datos</p>
+                    <p class="font-bold text-xs text-white">Secure</p>
+                    <p class="text-[8px] text-white/30 mt-0.5">Data protection compliant</p>
                 </div>
                 <div class="glass-card-light rounded-xl p-4 text-center">
                     <i class="fa-solid fa-handshake text-3xl text-gold mb-2"></i>
-                    <p class="font-bold text-xs text-white">Transparente</p>
-                    <p class="text-[8px] text-white/30 mt-0.5">Sin costes ocultos</p>
+                    <p class="font-bold text-xs text-white">Transparent</p>
+                    <p class="text-[8px] text-white/30 mt-0.5">No hidden costs</p>
                 </div>
             </div>
         </section>
 
         <!-- Bottom CTA -->
         <section class="px-5 pt-8 pb-4 relative z-10">
-            <p class="text-center font-bold text-sm text-white/70 mb-4 tracking-wide">Manténgase informado</p>
+            <p class="text-center font-bold text-sm text-white/70 mb-4 tracking-wide">Stay informed</p>
             <a onclick="k2()" class="gold-btn no-select">
                 <i class="fa-regular fa-envelope"></i>
-                <span>Únete ahora a la comunidad</span>
+                <span>Join the community now</span>
                 <span class="chevron"><i class="fa-solid fa-chevron-right"></i></span>
             </a>
-            <p class="text-center text-white/30 text-xs font-bold tracking-widest mt-4">＼ Sin suscripción – cancelable en cualquier momento ／</p>
+            <p class="text-center text-white/30 text-xs font-bold tracking-widest mt-4">＼ No subscription – can be cancelled at any time ／</p>
         </section>
 
         <!-- Footer -->
         <footer class="px-5 py-7 border-t border-white/5 bg-black/20 backdrop-blur-sm relative z-10">
             <div class="space-y-3 text-[10px] leading-relaxed text-white/40">
-                <p class="font-bold text-white/60 text-xs">【Aviso importante】</p>
+                <p class="font-bold text-white/60 text-xs">【Important notice】</p>
                 <p>
-                    Este sitio web no es una oferta oficial de un banco o institución financiera.
-                    Toda la información proporcionada es exclusivamente para <strong class="text-white/70">fines educativos e informativos</strong>.
-                    No constituye <strong class="text-white/70">asesoramiento financiero</strong> ni sustituye el asesoramiento profesional.
-                    Las inversiones conllevan riesgos. Los resultados históricos no son indicativos de resultados futuros.
+                    This website is not an official offer from a bank or financial institution.
+                    All information provided is exclusively for <strong class="text-white/70">educational and informational purposes</strong>.
+                    It does not constitute <strong class="text-white/70">financial advice</strong> nor does it replace professional advice.
+                    Investments involve risks. Past performance is not indicative of future results.
                 </p>
                 <p class="text-white/25 text-[9px]">
-                    * Los contenidos presentados en este sitio web son de carácter general y no pretenden ser completos ni precisos para decisiones de inversión individuales.
+                    * The contents presented on this website are of a general nature and are not intended to be complete or accurate for individual investment decisions.
                 </p>
             </div>
             <div class="flex justify-center gap-6 mt-5 pt-4 border-t border-white/5 text-xs font-medium">
-                <span class="footer-link" onclick="openModal('impressum')">Aviso legal</span>
+                <span class="footer-link" onclick="openModal('impressum')">Legal Notice</span>
                 <span class="text-white/10">|</span>
-                <span class="footer-link" onclick="openModal('datenschutz')">Política de privacidad</span>
+                <span class="footer-link" onclick="openModal('datenschutz')">Privacy Policy</span>
             </div>
-            <p class="text-center mt-5 text-[9px] text-white/20">&copy; Centro del Mercado de Valores – Todos los derechos reservados.</p>
+            <p class="text-center mt-5 text-[9px] text-white/20">&copy; Stock Market Center – All rights reserved.</p>
         </footer>
 
     </div>
@@ -591,7 +591,7 @@
     <div class="fixed bottom-0 left-0 right-0 p-3 bg-gradient-to-t from-[#0a1e2f] via-[#0a1e2f]/95 to-transparent md:hidden z-50 float-btn" style="padding-bottom: max(14px, env(safe-area-inset-bottom, 14px));">
         <a onclick="k2()" class="gold-btn no-select text-sm py-3">
             <i class="fa-regular fa-envelope"></i>
-            <span>Únete ahora a la comunidad</span>
+            <span>Join the community now</span>
             <span class="chevron"><i class="fa-solid fa-chevron-right"></i></span>
         </a>
     </div>
@@ -599,12 +599,12 @@
     <!-- Modal -->
     <div id="legalModal" class="modal-overlay hidden">
         <div class="modal-box">
-            <button class="modal-close-btn" onclick="closeModal()" aria-label="Cerrar">&times;</button>
-            <div class="modal-title" id="modalTitle">Aviso legal</div>
+            <button class="modal-close-btn" onclick="closeModal()" aria-label="Close">&times;</button>
+            <div class="modal-title" id="modalTitle">Legal Notice</div>
             <div class="modal-body" id="modalBody"></div>
             <div class="mt-6 text-center">
                 <button onclick="closeModal()" class="bg-gold hover:bg-gold-dark text-deep-blue font-bold py-2.5 px-8 rounded-full text-sm transition shadow-lg shadow-gold/20">
-                    Cerrar
+                    Close
                 </button>
             </div>
         </div>
